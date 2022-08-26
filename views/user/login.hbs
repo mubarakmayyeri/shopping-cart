@@ -13,6 +13,9 @@
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" name="Password" class="form-control" id="exampleInputPassword1">
                 </div>
+                {{#if loginErr}}
+                <p class="error text-danger mt-4">Invalid Username or password</p>
+                {{/if}}
                 <a href="/signup" style="text-decoration: none;">Don't have an account?</a>
                 <div class="d-flex justify-content-center mt-3 float-right">
                     <button type="submit" class="btn btn-primary float-left">Login</button>
